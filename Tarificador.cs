@@ -60,6 +60,12 @@ namespace Ejemplo4
                 envio = peso * 150.00f;
             }
             return envio;
+        }
+
+        public float CalcularIVA(float costo)
+        {
+            const float IVA = 0.16f;
+            return costo * IVA;
         } 
     }
 }
