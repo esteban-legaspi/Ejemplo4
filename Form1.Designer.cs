@@ -42,7 +42,7 @@
             lblCostoFlete = new Label();
             lblIVA = new Label();
             lblTotal = new Label();
-            label10 = new Label();
+            lMensaje = new Label();
             SuspendLayout();
             // 
             // label1
@@ -101,6 +101,7 @@
             btnCalcular.TabIndex = 5;
             btnCalcular.Text = "Calcular";
             btnCalcular.UseVisualStyleBackColor = true;
+            btnCalcular.Click += btnCalcular_Click;
             // 
             // btnLimpiar
             // 
@@ -183,23 +184,23 @@
             lblTotal.Text = "S/C";
             lblTotal.TextAlign = ContentAlignment.TopRight;
             // 
-            // label10
+            // lMensaje
             // 
-            label10.BackColor = SystemColors.HotTrack;
-            label10.Font = new Font("Segoe UI", 14F);
-            label10.Location = new Point(12, 462);
-            label10.Name = "label10";
-            label10.Size = new Size(776, 32);
-            label10.TabIndex = 14;
-            label10.Text = "Proporcione los datos de su envío";
-            label10.TextAlign = ContentAlignment.MiddleCenter;
+            lMensaje.BackColor = SystemColors.HotTrack;
+            lMensaje.Font = new Font("Segoe UI", 14F);
+            lMensaje.Location = new Point(12, 462);
+            lMensaje.Name = "lMensaje";
+            lMensaje.Size = new Size(776, 32);
+            lMensaje.TabIndex = 14;
+            lMensaje.Text = "Proporcione los datos de su envío";
+            lMensaje.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 503);
-            Controls.Add(label10);
+            Controls.Add(lMensaje);
             Controls.Add(lblTotal);
             Controls.Add(lblIVA);
             Controls.Add(lblCostoFlete);
@@ -236,6 +237,6 @@
         private Label lblCostoFlete;
         private Label lblIVA;
         private Label lblTotal;
-        private Label label10;
+        private Label lMensaje;
     }
 }

@@ -21,5 +21,30 @@ namespace Ejemplo4
         {
             InitializeComponent();
         }
+
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+            Tarificador tarificador = new Tarificador();
+            float peso = float.Parse(txtPesoPaquete.Text);
+            String? tipoEnvio = "";
+            float costoEnvio = 0.0f;
+            float impuestos = 0.0f;
+            float costoTotal = 0.0f;
+            if (cmboxTipoDestino.SelectedItem != null) 
+            {
+                tipoEnvio = cmboxTipoDestino.SelectedItem.ToString();
+                if (tipoEnvio == "Nacional")
+                {
+                    costoEnvio = tarificador.CalcularCostoEnvioNacional(peso);
+                }
+                else if (tipoEnvio == "Internacional")
+                {
+                    costoEnvio = tarificador.CalcularCostoEnvioInternacional(peso);
+                }
+
+            }
+
+
+        }
     }
 }
