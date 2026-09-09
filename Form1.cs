@@ -41,7 +41,11 @@ namespace Ejemplo4
                 {
                     costoEnvio = tarificador.CalcularCostoEnvioInternacional(peso);
                 }
-
+                impuestos = tarificador.CalcularIVA(costoEnvio);
+                costoTotal = costoEnvio + impuestos;
+                lblCostoFlete.Text = costoEnvio.ToString("C");
+                lblIVA.Text = impuestos.ToString("C");
+                lblTotal.Text = costoTotal.ToString("C");
             }
 
 
