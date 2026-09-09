@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            textBox1 = new TextBox();
+            txtPesoPaquete = new TextBox();
             label2 = new Label();
             label3 = new Label();
             cmboxTipoDestino = new ComboBox();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            btnCalcular = new Button();
+            btnLimpiar = new Button();
+            btnSalir = new Button();
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
-            label7 = new Label();
-            label8 = new Label();
-            label9 = new Label();
+            lblCostoFlete = new Label();
+            lblIVA = new Label();
+            lblTotal = new Label();
             label10 = new Label();
             SuspendLayout();
             // 
@@ -55,13 +55,13 @@
             label1.TabIndex = 0;
             label1.Text = "Peso del Paquete: ";
             // 
-            // textBox1
+            // txtPesoPaquete
             // 
-            textBox1.Font = new Font("Segoe UI", 14F);
-            textBox1.Location = new Point(255, 25);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 39);
-            textBox1.TabIndex = 1;
+            txtPesoPaquete.Font = new Font("Segoe UI", 14F);
+            txtPesoPaquete.Location = new Point(255, 25);
+            txtPesoPaquete.Name = "txtPesoPaquete";
+            txtPesoPaquete.Size = new Size(125, 39);
+            txtPesoPaquete.TabIndex = 1;
             // 
             // label2
             // 
@@ -93,32 +93,32 @@
             cmboxTipoDestino.Size = new Size(125, 39);
             cmboxTipoDestino.TabIndex = 4;
             // 
-            // button1
+            // btnCalcular
             // 
-            button1.Location = new Point(37, 203);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 5;
-            button1.Text = "Calcular";
-            button1.UseVisualStyleBackColor = true;
+            btnCalcular.Location = new Point(37, 203);
+            btnCalcular.Name = "btnCalcular";
+            btnCalcular.Size = new Size(94, 29);
+            btnCalcular.TabIndex = 5;
+            btnCalcular.Text = "Calcular";
+            btnCalcular.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnLimpiar
             // 
-            button2.Location = new Point(192, 203);
-            button2.Name = "button2";
-            button2.Size = new Size(94, 29);
-            button2.TabIndex = 6;
-            button2.Text = "Limpiar";
-            button2.UseVisualStyleBackColor = true;
+            btnLimpiar.Location = new Point(192, 203);
+            btnLimpiar.Name = "btnLimpiar";
+            btnLimpiar.Size = new Size(94, 29);
+            btnLimpiar.TabIndex = 6;
+            btnLimpiar.Text = "Limpiar";
+            btnLimpiar.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnSalir
             // 
-            button3.Location = new Point(363, 203);
-            button3.Name = "button3";
-            button3.Size = new Size(94, 29);
-            button3.TabIndex = 7;
-            button3.Text = "Salir";
-            button3.UseVisualStyleBackColor = true;
+            btnSalir.Location = new Point(363, 203);
+            btnSalir.Name = "btnSalir";
+            btnSalir.Size = new Size(94, 29);
+            btnSalir.TabIndex = 7;
+            btnSalir.Text = "Salir";
+            btnSalir.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -150,38 +150,38 @@
             label6.TabIndex = 10;
             label6.Text = "Total:";
             // 
-            // label7
+            // lblCostoFlete
             // 
-            label7.BorderStyle = BorderStyle.FixedSingle;
-            label7.Font = new Font("Segoe UI", 14F);
-            label7.Location = new Point(231, 291);
-            label7.Name = "label7";
-            label7.Size = new Size(149, 32);
-            label7.TabIndex = 11;
-            label7.Text = "S/C";
-            label7.TextAlign = ContentAlignment.TopRight;
+            lblCostoFlete.BorderStyle = BorderStyle.FixedSingle;
+            lblCostoFlete.Font = new Font("Segoe UI", 14F);
+            lblCostoFlete.Location = new Point(231, 291);
+            lblCostoFlete.Name = "lblCostoFlete";
+            lblCostoFlete.Size = new Size(149, 32);
+            lblCostoFlete.TabIndex = 11;
+            lblCostoFlete.Text = "S/C";
+            lblCostoFlete.TextAlign = ContentAlignment.TopRight;
             // 
-            // label8
+            // lblIVA
             // 
-            label8.BorderStyle = BorderStyle.FixedSingle;
-            label8.Font = new Font("Segoe UI", 14F);
-            label8.Location = new Point(231, 344);
-            label8.Name = "label8";
-            label8.Size = new Size(149, 32);
-            label8.TabIndex = 12;
-            label8.Text = "S/C";
-            label8.TextAlign = ContentAlignment.TopRight;
+            lblIVA.BorderStyle = BorderStyle.FixedSingle;
+            lblIVA.Font = new Font("Segoe UI", 14F);
+            lblIVA.Location = new Point(231, 344);
+            lblIVA.Name = "lblIVA";
+            lblIVA.Size = new Size(149, 32);
+            lblIVA.TabIndex = 12;
+            lblIVA.Text = "S/C";
+            lblIVA.TextAlign = ContentAlignment.TopRight;
             // 
-            // label9
+            // lblTotal
             // 
-            label9.BorderStyle = BorderStyle.FixedSingle;
-            label9.Font = new Font("Segoe UI", 14F);
-            label9.Location = new Point(231, 395);
-            label9.Name = "label9";
-            label9.Size = new Size(149, 32);
-            label9.TabIndex = 13;
-            label9.Text = "S/C";
-            label9.TextAlign = ContentAlignment.TopRight;
+            lblTotal.BorderStyle = BorderStyle.FixedSingle;
+            lblTotal.Font = new Font("Segoe UI", 14F);
+            lblTotal.Location = new Point(231, 395);
+            lblTotal.Name = "lblTotal";
+            lblTotal.Size = new Size(149, 32);
+            lblTotal.TabIndex = 13;
+            lblTotal.Text = "S/C";
+            lblTotal.TextAlign = ContentAlignment.TopRight;
             // 
             // label10
             // 
@@ -200,19 +200,19 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 503);
             Controls.Add(label10);
-            Controls.Add(label9);
-            Controls.Add(label8);
-            Controls.Add(label7);
+            Controls.Add(lblTotal);
+            Controls.Add(lblIVA);
+            Controls.Add(lblCostoFlete);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btnSalir);
+            Controls.Add(btnLimpiar);
+            Controls.Add(btnCalcular);
             Controls.Add(cmboxTipoDestino);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(textBox1);
+            Controls.Add(txtPesoPaquete);
             Controls.Add(label1);
             Name = "Form1";
             Text = "Paquete Express";
@@ -223,19 +223,19 @@
         #endregion
 
         private Label label1;
-        private TextBox textBox1;
+        private TextBox txtPesoPaquete;
         private Label label2;
         private Label label3;
         private ComboBox cmboxTipoDestino;
-        private Button button1;
-        private Button button2;
-        private Button button3;
+        private Button btnCalcular;
+        private Button btnLimpiar;
+        private Button btnSalir;
         private Label label4;
         private Label label5;
         private Label label6;
-        private Label label7;
-        private Label label8;
-        private Label label9;
+        private Label lblCostoFlete;
+        private Label lblIVA;
+        private Label lblTotal;
         private Label label10;
     }
 }
